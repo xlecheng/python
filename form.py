@@ -242,8 +242,8 @@ def get_checkin_info():
     Chkin_Info["午间健康状况"] = com1_2.get(); Chkin_Info["午间体温"] = txt1_2.get('0.0',END)[:-1]
     Chkin_Info["在校状态"] = com1_3.get(); Chkin_Info["所在国家城市"] = txt1_3.get('0.0',END)[:-1]
     Adres_I["province"] = txt1_4.get('0.0',END)[:-1]
-    Adres_I["city"] = txt1_4.get('0.0',END)[:-1]
-    Adres_I["area"] = txt1_4.get('0.0',END)[:-1]
+    Adres_I["city"] = txt1_5.get('0.0',END)[:-1]
+    Adres_I["area"] = txt1_6.get('0.0',END)[:-1]
     Adres_I["fullValue"] = Adres_I["province"] + Adres_I["city"] + Adres_I["area"]
 def gocheckin_multi():
     try:
@@ -547,8 +547,8 @@ def main():
     root = tk.Tk()
     set_var(root)
     myinit(root)
-    myoutput("重要声明：您使用本软件，意味着您同意您对自己的身体健康负责，有病情绝不瞒报漏报。本程序作者不会对因使用本软件而产生的瞒报、漏报情况负责\n\n")
-    myoutput('版本2.2.1')
+    myoutput("重要声明：您使用本软件，意味着您同意您对自己的身体健康负责，有病情绝不瞒报漏报。本程序作者不会对因使用本软件而产生任何后果负责\n\n")
+    myoutput('版本2.3.1')
     myoutput('')
     root.mainloop()
 if __name__ == "__main__":
